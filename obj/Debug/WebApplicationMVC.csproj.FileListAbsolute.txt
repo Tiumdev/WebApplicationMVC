@@ -88,3 +88,7 @@ D:\MVC\WebApplicationMVC\WebApplicationMVC\obj\Debug\WebApplicationMVC.csprojRes
 D:\MVC\WebApplicationMVC\WebApplicationMVC\obj\Debug\WebApplicationMVC.csproj.CoreCompileInputs.cache
 D:\MVC\WebApplicationMVC\WebApplicationMVC\obj\Debug\WebApplicationMVC.dll
 D:\MVC\WebApplicationMVC\WebApplicationMVC\obj\Debug\WebApplicationMVC.pdb
+D:\MVC\WebApplicationMVC\WebApplicationMVC\bin\EntityFramework.dll
+D:\MVC\WebApplicationMVC\WebApplicationMVC\bin\EntityFramework.SqlServer.dll
+D:\MVC\WebApplicationMVC\WebApplicationMVC\bin\EntityFramework.xml
+D:\MVC\WebApplicationMVC\WebApplicationMVC\bin\EntityFramework.SqlServer.xml

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebApplicationMVC.Models;
 
 namespace WebApplicationMVC.Controllers
 {
@@ -22,9 +23,16 @@ namespace WebApplicationMVC.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            MVCdbEntities1 db = new MVCdbEntities1();
 
-            return View();
+            User user = db.Users.SingleOrDefault(x=>x.Id == 1);
+
+            UsersViewModel usrVM = new UsersViewModel();
+            usrVM.Id = user.Id;
+            usrVM.FName = user.FName;
+            usrVM.LName = user.LName;
+            usrVM.Address = user.Address;
+            return View(usrVM);
         }
     }
 }
