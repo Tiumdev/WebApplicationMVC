@@ -26,5 +26,7 @@ namespace WebApplicationMVC.Models
         }
     
         public virtual DbSet<User> Users { get; set; }
+
+        public System.Data.Entity.DbSet<WebApplicationMVC.Models.UsersViewModel> UsersViewModels { get; set; }
     }
 }

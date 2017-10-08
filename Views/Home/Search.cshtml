@@ -1,0 +1,47 @@
+﻿@model IEnumerable<WebApplicationMVC.Models.UsersViewModel>
+
+@{
+    ViewBag.Title = "Search";
+}
+
+<h2>Search</h2>
+
+
+<div class="row">
+    <div class="col-md-4">
+
+        <ul class="nav navbar-nav">
+            <li>@Html.ActionLink("Add", "Add", "Home")</li>
+        </ul>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <div class="container" style="width:100%; margin-top:2%;">
+            <table class="table table-responsive">
+                <tr>
+                    <th>User id</th>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Address</th>
+                </tr>
+
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.FName</td>
+                            <td>@item.LName</td>
+                            <td>@item.Address</td>
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+</div>
